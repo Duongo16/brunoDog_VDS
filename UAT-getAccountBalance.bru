@@ -1,0 +1,28 @@
+meta {
+  name: UAT-getAccountBalance
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://10.255.56.194:8088/uat-switchings/payment-exchange/v1/account-balance
+  body: json
+  auth: inherit
+}
+
+headers {
+  content-type: application/json
+}
+
+body:json {
+  {
+    "requestId": "request16112004",
+    "accountNumber": "enc:5QEzaiP4v2hQkIgCTxeHSg==",
+    "processBankCode": "EIB"
+  }
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

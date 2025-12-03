@@ -1,0 +1,32 @@
+meta {
+  name: getAccountBalance
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://gw-staging.digital.vn/switching/payment-exchange/v1/account-balance
+  body: json
+  auth: inherit
+}
+
+params:query {
+  : 
+}
+
+headers {
+  content-type: application/json
+}
+
+body:json {
+  {
+    "requestId": "request16112004",
+    "accountNumber": "enc:Wy+MHPCl4xxopFCUF+SymQ==",
+    "processBankCode": "EIB"
+  }
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

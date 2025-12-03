@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "switching-payment-exchange",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
